@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
 }
@@ -17,7 +18,7 @@ body {
     align-items: flex-end;
     margin-bottom: 0;
     margin-right: 0;
-    gap: 1em;
+    gap: 2em;
     padding-right: 100px;
     
 }
@@ -35,6 +36,10 @@ body {
     border-radius: 10px;
 }
 
+li.nav-list:hover {
+    background-color: #3882f6;
+}
+
 .main {
     display: flex;
     margin-bottom: 50px;
@@ -50,7 +55,7 @@ body {
     max-width: 450px;
     height: 300px;
     object-fit: cover;
-    border-radius: 10px; 
+    border-radius: 20px; 
     margin-left: 50px
 }
 
@@ -82,7 +87,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
     gap: 16px;
     max-width: 1400px;
     margin: 0 auto;
@@ -91,44 +95,26 @@ body {
 
 .photo-cap {
     width: 100%;
-    max-width: 150px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 20px;
     font-size: 18px;
     color: #1f2937;
     text-align: center;
+    justify-content: center;
 }
 
-.img-one {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;  
+.img-one, .img-two, .img-three, .img-four {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    padding: 10px;   
+    text-align: center;
+    justify-content: center;
+    border-collapse: separate;
 }
 
-.img-two {
-   width: 100%;
-    max-width: 150px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;   
-}
-.img-three{
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px; 
-}
-
-.img-four { 
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px; 
+.img-div {
+    display: flex;
+    flex-direction: column;
 }
 
 .quote {
@@ -160,24 +146,29 @@ cite {
     padding: 30px 75px;
     border-radius: 10px;;
     margin: 50px;
+
 }
 
 .bottom-banner-inner {
     background-color: #3882f6;
-    padding: 30px;
+    padding: 30px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .banner-text {
-    margin-right: 40px;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 20px;
 }
 
 .enquire {
     border: solid white;
     align-self:center;
-    padding-top: 5px;
+    padding: 5px;
     padding-bottom: 5px;
     background-color: #3882f6;
     border-radius: 10px; 
@@ -199,14 +190,17 @@ cite {
     padding: 10px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 750px) {
+    body {
+        margin:0;
+    }
+
     .hero {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       padding: 0; 
     justify-items: flex-end;
-      border: solid pink;
     }
 
     #pebbles-logo {
@@ -214,11 +208,24 @@ cite {
         margin-top : 10px;
     }
 
+    .logo {
+        padding: 0;
+        margin: 0 auto;
+    }
+
     .main {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
-
+        padding: 20px; 
+    }
+    ul.nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 5px;
     }
 
     .intro-img {
@@ -232,5 +239,38 @@ cite {
 
     .enquire {
         align-self: center;
+        margin: 0 auto;
+        
     }
+
+    .bottom-banner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 40px;
+        padding: 0;
+    }
+
+    .bottom-banner-inner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bottom-banner-inner > button {
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        margin: 0 auto;
+        text-align: center;
+    }
+.banner-text {
+    margin-top : 0px;
+}
   }
