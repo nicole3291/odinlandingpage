@@ -2,6 +2,7 @@
 body {
     margin: 0;
 }
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -21,13 +22,25 @@ body {
     margin-right: 0;
     gap: 2em;
     padding-right: 100px;
-    
 }
 
 .nav-list {
     list-style: none;
+    text-decoration: none;
 }
 
+a:link {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+li.nav-list:hover {
+    background-color: #88888a;
+    color: #1f2937;
+}
+a:visited {
+    color: #e5e7eb;
+    background-color: #1f2937;
+}
 .logo {
    margin-left: 0;
    padding-left: 100px; 
@@ -37,14 +50,6 @@ body {
     border-radius: 10px;
 }
 
-li.nav-list:hover {
-    background-color: #88888a;
-    color: #1f2937;
-}
-a:visited {
-    color: #e5e7eb;
-    background-color: #1f2937;
-}
 .fa-facebook {
     background: #3B5998;
     color: white;
