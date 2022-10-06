@@ -38,8 +38,12 @@ body {
 }
 
 li.nav-list:hover {
-    background-color: #e5e7eb;
+    background-color: #88888a;
     color: #1f2937;
+}
+a:visited {
+    color: #e5e7eb;
+    background-color: #1f2937;
 }
 .fa-facebook {
     background: #3B5998;
@@ -245,10 +249,6 @@ iframe {
     color: #1f2937;
     padding: 10px;
     margin-bottom: 10px;
-}
-
-a:visited {
-    color: inherit;
 }
 
 
